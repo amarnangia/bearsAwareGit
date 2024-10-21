@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000080">
+
+    <!-- Program Copyright section -->
+    <TextView
+        android:id="@+id/copyrightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program Copyright:"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/mapTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map is thanks to Bridgeland Student Media BSM © 2021"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@id/copyrightTextView"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/galleryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Images featured in the image gallery have been given by the Bridgeland FBLA club © 2021"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@id/mapTextView"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/winTheDayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="“Win The Day” image is sourced from @bridgelandCFISD Facebook page © 2020"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@id/galleryTextView"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/facebookIntegrationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook integration from Meta © 2023"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@id/winTheDayTextView"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000080">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n\n\nSelect a name(teacher emails):"
+        android:textColor="#FFFFFF"/>
+
+    <Spinner
+        android:id="@+id/name_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SpinnerTextStyle"
+        android:entries="@array/name_options" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:onClick="sendingEmail"
+        android:text="Send Email"
+        app:backgroundTint="#FF5722" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n\n\nContact Attendence Office"
+        android:textColor="#FFFFFF"/>
+
+    <Spinner
+        android:id="@+id/name_spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SpinnerTextStyle"
+        android:entries="@array/attendence_options" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:onClick="contactAttendence"
+        android:text="Email Attendence Office"
+        app:backgroundTint="#FF5722" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n\n\n Some phones may not have the capability to open the mail app. If that is the case, the following is your teacher's email:"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/lastName2"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:onClick="callSchool"
+        android:text="Call Attendence Office"
+        app:backgroundTint="#FF5722" />
+
+</LinearLayout>
